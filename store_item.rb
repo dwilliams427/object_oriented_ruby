@@ -21,6 +21,9 @@ item3 = {
 }
 
 class Item
+  attr_reader = :make, :model, :color, :price
+  attr_writer = :price
+
   def initialize(input_make, input_model, input_color, input_price)
     @make = input_make
     @model = input_model
@@ -28,28 +31,28 @@ class Item
     @price = input_price
   end
 
-  def make
-    return @make
-  end
+  # def make
+  #   return @make
+  # end
 
-  def model
-    return @model
-  end
+  # def model
+  #   return @model
+  # end
 
-  def color
-    return @color
-  end
+  # def color
+  #   return @color
+  # end
 
-  def price
-    return @price
-  end
+  # def price
+  #   return @price
+  # end
 
-  def price=(price)
-    @price = price
-  end
+  # def price=(price)
+  #   @price = price
+  # end
 end
 
 car1 = Item.new("Toyota", "Highlander", "red", 40000)
-puts car1.make
-puts car1.model
-puts car1.price
+# puts car1.make
+# puts car1.model
+# puts car1.price
